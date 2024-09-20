@@ -1,16 +1,31 @@
 class Character:
-    def __init__(self, name, gender, category, game):
+    def __init__(self, name, gender):
         self.name = name
         self.gender = gender
-        self.category = category
-        self.game = game
     
     def info(self):
-        return f"{self.name} | {self.gender} | {self.category} | {self.game}"
+        return f"Name: {self.name} | Gender: {self.gender}"
 
 
+class Hunter(Character):
+    def __init__(self, name, gender, weapon, masterRank):
+        super().__init__(name, gender)
+        self.weapon = weapon
+        self.masterRank= masterRank
+    
+    def info(self):
+        return f"{super().info()} | Weapon: {self.weapon} | Master Rank: {self.masterRank}"
+    
+    def setWeapon(self, weapon):
+        self.weapon = weapon
+        
+    def getWeapon(self):
+        print(f"{self.weapon}")
 
+hunter1 = Hunter("Lyra", "Female", "Dual Blades", 7)
 
-chr1 = Character("Dante", "Hombre", "Devil", "Devil My Cry")
+hunter1.setWeapon("Long Sword")
 
-print(chr1.info())
+"""print(hunter1.info())"""
+
+hunter1.getWeapon
