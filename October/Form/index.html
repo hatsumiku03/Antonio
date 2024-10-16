@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de Jose</title>
+</head>
+<body>
+    <form action="/ningunsitioXDD">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="name" name="name">
+<br><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"> 
+        
+<br><br>
+        <label for="pass">Password (8 characters minimum):</label><br>
+        <input type="password" id="pass" name="password" minlength="8" required />
+<br><br>
+        <label for="age">Age (you must be more older than 12 years):</label><br>
+        <input type="number" name="age" maxlength="2"  max="99" min="12" step="1" placeholder="YY" p="[0-9]{4}" required/>
+<br><br>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other   
+<br><br>
+        <label for="checkbox">What you known?:</label><br>
+        <input type="checkbox" id="pro" name="pro" value="Programming">
+        <label for="pro">Programming</label>
+        <input type="checkbox" id="db" name="db" value="Database">
+        <label for="db">Database</label>
+        <input type="checkbox" id="wd" name="wd" value="WebDesign">
+        <label for="wd">Web Design</label>
+<br><br>
+        <button type="submit">Submit</button>
+    </form> 
+    
+</body>
+</html>
