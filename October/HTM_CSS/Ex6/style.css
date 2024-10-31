@@ -10,6 +10,11 @@ body{
     overflow: hidden;
 }
 
+hr{
+    border: 2px solid rgb(131, 128, 128);
+    border-radius: 5px;
+}
+
 aside {
     width: 10%;
     padding-left: 0.5rem;
@@ -40,6 +45,7 @@ aside {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    border: #000 solid 2px;
 }
 
 #imgP{
@@ -47,6 +53,48 @@ aside {
     padding: 12px;
 }
  /* Sidebar */
+ .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 55px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: #161a2d3d;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+    text-indent: -9999px;     
+}
+
+.sidebar:hover {
+    width: 260px;
+    background: #161a2d;
+    font-size: large;
+    text-indent: 0;
+}
+
+.individualSidebarLink{
+    text-align: center;
+}
+
+
+.individualSidebarLink:link{
+    text-decoration: none;
+}
+
+.individualSidebarLink:active{
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+.individualSidebarLink:visited{
+    padding: 4px;
+    text-align: center;
+    color: #dbdbdb;
+    text-decoration: none;
+}
 
  /* Biography */
  #bioMain{
@@ -57,7 +105,7 @@ aside {
  /* Image Carousel */
 .container{
     position: absolute;
-    top: 50%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
@@ -67,8 +115,8 @@ aside {
 }
 
 .container .slide .item{
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 150px;
     position: absolute;
     top: 50%;
     transform: translate(100%, -20%);
@@ -92,13 +140,13 @@ aside {
 
 
 .slide .item:nth-child(3){
-    left: 50%;
+    left: 70%;
 }
 .slide .item:nth-child(4){
-    left: calc(50% + 220px);
+    left: calc(50% + 215px);
 }
 .slide .item:nth-child(5){
-    left: calc(50% + 440px);
+    left: calc(50% + 350px);
 }
 .slide .item:nth-child(n + 6){
     left: calc(50% + 660px);
@@ -157,8 +205,8 @@ aside {
 }
 
 .button button{
-    width: 15px;
-    height: 10px;
+    width: 20px;
+    height: 15px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
