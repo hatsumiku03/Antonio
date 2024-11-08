@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-menu {
+    display: grid;
+    width: 100px;
+    transition: width 0.4s;
+    position: absolute;
+}
+
+.vertical-menu:hover {
+    width: 200px;
+    transition: width 0.4s;
+}
+
+.vertical-menu a {
+    background-color: #3b3b3b;
+    color: rgb(211, 211, 211);
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #686868;
+    color: rgb(241, 170, 170);
+}
+
+.vertical-menu a.active {
+    background-color: #690b0b;
+    color: rgb(212, 212, 212);
+}
+
+.title{
+    grid: auto;
+    text-align: center;
+}

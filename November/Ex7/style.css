@@ -1,0 +1,39 @@
+body{
+    background-color: gray;
+}
+
+.center{
+    grid: auto;
+    text-align: center;
+}
+
+@media (min-width: 1250px) {
+    h2{
+        font-size: 4em;
+    }
+    div.center img{
+        height: 15em;
+    }    
+}
+
+
+@media (max-width: 1250px) {
+    h2{
+        font-size: 3em;
+    }
+    div.center img{
+        height: 15em;
+        content:url("https://e1.pxfuel.com/desktop-wallpaper/902/841/desktop-wallpaper-tekken-devil-jin-and-backgrounds-devil-jin-kazama.jpg");
+    }    
+}
+
+@media (max-width: 768px) {
+    h2{
+        font-size: 2em;
+    }
+
+    div.center img{
+        height: 14em;
+        content:url('https://i.pinimg.com/736x/99/7b/0e/997b0eea6efd2761f7aa39a99bb4bb63.jpg');
+    }    
+}
