@@ -27,6 +27,7 @@ html, body {
 
 .title{
     font-size: 2em;
+    text-align: center;
 }
 
 body{
@@ -71,15 +72,35 @@ body{
 }
 
 .babs img{
-    width: 20em;
+    width: 60em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8em;
+    margin-bottom: 50em;
+    border: #111 solid;
+}
+
+.quick-tips{
+    margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.quick-tips > p{
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: black;
 }
 
 @media screen and (max-width: 480px) {
     .vertical-menu {padding-top: 15px; width: 13px;}
+    .page-body{margin: 15px;}
+    .title{font-size: 23px; margin: 15px;}
+    .babs img{width: 20em;}
     .vertical-menu:hover {padding-top: 15px; width: 350px;}
     .vertical-menu a {font-size: 18px;}
 }
