@@ -1,40 +1,85 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.page-header, .page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: aliceblue;
+    color: black;
+}
+.page-body {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+}
+
 body{
-    background-color: gray;
+    color: #b9b9b9;
+    background-color: #3B272D;
     margin: 0;
     padding: 0;
 }
 
 .vertical-menu {
-    display: grid;
-    width: 100px;
-    transition: width 0.4s;
-    position: absolute;
+    height: 100%;
+    width: 1em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.vertical-menu:hover {
-    width: 200px;
-    transition: width 0.4s;
+.vertical-menu:hover{
+    width: 10em;
 }
 
 .vertical-menu a {
-    background-color: #3b3b3b;
-    color: rgb(211, 211, 211);
-    display: block;
-    padding: 12px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .vertical-menu a:hover {
-    background-color: #686868;
-    color: rgb(241, 170, 170);
+    color: #f1f1f1;
 }
 
 .vertical-menu a.active {
-    background-color: #690b0b;
-    color: rgb(212, 212, 212);
+    color: #f1f1f1;
 }
 
-.title{
-    grid: auto;
-    text-align: center;
+.babs img{
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+}
+
+@media screen and (max-width: 480px) {
+    .vertical-menu {padding-top: 15px; width: 13px;}
+    .vertical-menu:hover {padding-top: 15px; width: 350px;}
+    .vertical-menu a {font-size: 18px;}
 }
