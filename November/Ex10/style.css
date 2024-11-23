@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #a51616;
+    place-items: center;
+    padding: 10px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.8);
+    place-items: center;
+}
+    
+.grid-item-small {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
