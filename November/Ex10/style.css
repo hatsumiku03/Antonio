@@ -1,27 +1,22 @@
 body{
-    display: flex;
     background-color: gray;
     justify-content: center;
     margin-top: 10%;
 }
-
-.grid-container {
-    display: grid;
-    background-color: #a51616;
-    place-items: center;
-    padding: 10px;
-}
-
-.grid-item {
-    width: 200px;
-    height: 200px;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.8);
-    place-items: center;
+    
+    .grid-container { 
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 60px 172px; 
+        gap: 10px; 
 }
     
-.grid-item-small {
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
+    .grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(43, 39, 39, 0.8);
+    color: antiquewhite;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
 }
