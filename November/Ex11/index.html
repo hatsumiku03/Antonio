@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11 -Jose</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-400 flex flex-col min-h-screen">
+    <!-- Ultra simplified navbar -->
+    <div class="text-white">
+        <header class="bg-green-800 p-4">
+            <button class="md:hidden text-2xl">☰</button>
+            <!-- Con el md:block se muestra el nav en caso de que este en pantallas medianas, la parte de javascript me dio pereza hacerla xD -->
+            <nav class="hidden md:block">
+                <ul class="space-x-4">
+                    <li class="inline"><a href="#">Inicio</a></li>
+                    <li class="inline"><a href="#">Sobre nosotros</a></li>
+                    <li class="inline"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Title -->
+            <h1 class="text-xl md:text-3xl">EcoBlog</h1>
+            <img src="https://i1.sndcdn.com/artworks-000291226281-zm2iq5-t500x500.jpg" width="80px">
+        </header>
+    </div>
+
+    <!-- Main content-->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-4 p-4">
+        <main class="col-span-1 md:col-span-8 lg:col-span-8">
+            <!-- Title -->
+            <h2 class="text-2xl mb-4">Bienvenidos a EcoBlog</h2>
+
+            <!-- Content -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente velit fugiat tenetur! A accusantium officiis quasi dolore odio nisi, repellendus non sapiente doloribus dignissimos ab, sit, necessitatibus aut dolorum.</p>
+        </main>
+        <!-- Hubiese hecho un contenedor que agarrase y se adaptase, con un border para que se vea como un buen aside, pero me dio palo, srry, y eso que andaba con tailwind xD-->
+        <aside class="col-span-1 md:col-span-8 lg:col-span-4">
+            <h2 class="text-xl mb-4">Resources</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat suscipit exercitationem! Expedita explicabo cupiditate possimus quod, sunt delectus ullam numquam, praesentium similique, qui odit fuga consequuntur debitis reiciendis nihil.
+            </p> 
+        </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-200 p-4 text-center text-sm mt-4 sticky bottom-0 mt-auto">
+        <p>© 2023 EcoBlog. Todos los derechos reservados. <a href="#" class="text-black">Política de privacidad</a></p>
+    </footer>
+</body>
+</html>
