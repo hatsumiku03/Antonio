@@ -1,0 +1,13 @@
+$bg-color: #64748b;
+
+body{
+    background-color: $bg-color;
+}
+
+
+a{
+    &:hover{
+        color: red;
+        font-size: 80px;
+    }
+}
