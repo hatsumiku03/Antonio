@@ -1,0 +1,14 @@
+@mixin title($size, $mediumSize){
+    font-size: $size;
+    @media only screen and (max-width: 500px) {
+        font-size: $mediumSize;
+    }
+}
+
+.title1 {
+    @include title(20px, 10px)
+}
+
+.title2 {
+    @include title(23px, 50px)
+}
