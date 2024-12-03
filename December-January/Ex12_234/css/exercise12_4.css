@@ -1,3 +1,25 @@
+.btn-primary {
+  background-color: #3498db;
+}
 
+.btn-secondary {
+  background-color: #2ecc71;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+.text-primary {
+  color: #3498db;
+}
+
+.text-secondary {
+  color: #2ecc71;
+}
+
+.text-danger {
+  color: #e74c3c;
+}
 
 /*# sourceMappingURL=exercise12_4.css.map */

@@ -1,0 +1,23 @@
+$theme-colors: (
+    "primary": #3498db,
+    "secondary": #2ecc71,
+    "danger": #e74c3c
+);
+
+.btn-primary{
+    background-color: map-get($map: $theme-colors, $key: primary);
+}
+
+.btn-secondary{
+    background-color: map-get($map: $theme-colors, $key: secondary);
+}
+
+.btn-danger{
+    background-color: map-get($map: $theme-colors, $key: danger);
+}
+
+@each $type, $theme-color in $theme-colors {
+    .text-#{$type} {
+        color: map-get($map: $theme-colors, $key: $type);
+    }
+}
