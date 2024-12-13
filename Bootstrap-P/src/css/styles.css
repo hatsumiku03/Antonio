@@ -11844,5 +11844,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h1 {
+  font-size: 90px;
+}
+
+.btn-primary {
+  background-color: rgb(21, 35, 114);
+}
+
+.btn-secondary {
+  background-color: green;
+}
+
+.card {
+  border: 1px solid red;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
-<title>Ejercicio Bootstrap Sass</title>
+<title>Ejercicio: Extender Clases</title>
 <link rel="stylesheet" href="../dist/styles.css">
 </head>
 <body>
-    <div class="container text-center my-5">
-        <h1 class="text-primary">¡Bienvenido a mi página!</h1>
-            <p class="text-secondary">Esta página usa Bootstrap con Sass.</p>
-                <button class="btn btn-primary">Botón Primario</button>
-                <button class="btn btn-secondary">Botón Secundario</button>
+    <div class="container my-5">
+        <h1 class="text-primary">Extender Clases en Bootstrap</h1>
+            <p class="custom-alert">Este es un mensaje de alerta personalizado.</p>
+            <div class="custom-card">
+                <h5 class="card-title">Tarjeta personalizada</h5>
+                    <p>Esta tarjeta extiende la clase `.card` de Bootstrap.</p>
+                    <button class="custom-btn">Botón personalizado</button>
+            </div>
+            <p class="custom-paragraph">Este párrafo extiende la clase `.text-secondary`.</p>
     </div>
 </body>
 </html>
