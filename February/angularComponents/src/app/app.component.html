@@ -26,4 +26,11 @@
     </div>
   </nav>
 
+  <div *ngIf="mainPage">
+    <h2 class="text-5xl font-bold m-3 text-center">Página principal</h2>
+    <p class="text-center mt-5">Muy buenas y bienvenidos a una mini página web de angular creada por Joselito Alba Arrufat, de segundo año de desarrollo de aplicaciones web.
+      <br>
+      Esta mini web es para mostrar componentes random pillados de por ahí de angular, en esta página no los verán, lo verán en la sección de <a routerLink="/components" class="text-blue-500 hover:text-blue-400 hover:underline">componentes</a>
+    </p>
+  </div>
 <router-outlet />
