@@ -1,0 +1,23 @@
+<div class="m-5">
+    <p><span class="font-bold">Nombre del pibe basado:</span> {{name}}</p>
+    <p><span class="font-bold">Apellido marroquí:</span> {{surname}}</p>
+    <p><span class="font-bold">Edad de ese sinvergüenza:</span> {{age}} | {{age > 18 ? "Mayor":"Menor"}}</p>
+    
+    <p><span class="font-bold">Dirección del humano:</span> {{ direction.value }}</p>
+    <p><span class="font-bold">Introduce la dirección de ese humano:</span><input class="border-1 rounded-md" type="text" #direction></p>
+    
+    <p><span class="font-bold">Empresa donde trabaja ese vagabundo:</span> {{ company.value }} </p>
+    <p><span class="font-bold">Introduce la dirección de ese vagabundo:</span> <input class="border-1 rounded-md" type="text" #company></p>
+
+    <p><span class="font-bold">NACONALIDAD DE LA PERSONA:</span> {{ nationality.value }}</p>
+    <p><span class="font-bold">PON LA NACIONALIDAD DE ESA PERSONA:</span> <input class="border-1 rounded-md" type="text" #nationality (keyup)="0"></p>
+
+    <input (click)="rellenameEsta(direction.value, company.value)" class="border-1 bg-gray-400 p-1 rounded-md hover:bg-gray-300 cursor-pointer transition-colors mt-2 ml-4" value="Dame da ne"/>
+
+    <div class="mt-4">
+        <div class="mb-3 bg-slate-300 p-1 rounded-md border-1 w-fit">{{ registeredText }}</div>
+        <div>Registrarse: <input type="radio" value="true" name="uregister" (click)="setUserR($event)"></div>
+        <div>Seguir sin registro: <input type="radio" value="false" name="uregister" (click)="setUserR($event)"></div>
+
+    </div>
+</div>
